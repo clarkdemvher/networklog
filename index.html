@@ -1,61 +1,73 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="NetworkLog : Android Network Log Monitor" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>NetworkLog</title>
+    <meta charset="UTF-8">
+    <title>NetworkLog by clarkdemvher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">NetworkLog</h1>
+      <h2 class="project-tagline">Android Network Log Monitor</h2>
+      <a href="https://github.com/clarkdemvher/networklog" class="btn">View on GitHub</a>
+      <a href="https://github.com/clarkdemvher/networklog/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/clarkdemvher/networklog/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/pragma-/networklog">View on GitHub</a>
-
-          <h1 id="project_title">NetworkLog</h1>
-          <h2 id="project_tagline">Android Network Log Monitor</h2>
-
-            <section id="downloads">
-              <a class="apk_download_link" href="https://github.com/pragma-/networklog/downloads">Download the .apk file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>Android Network Log Monitor</h1>
+    <section class="main-content">
+      <h1>
+<a id="android-network-log-monitor" class="anchor" href="#android-network-log-monitor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android Network Log Monitor</h1>
 
 <p><em>Requires rooted devices.</em></p>
 
-<h3><strong>Wondering when and to where your Android apps are connecting across the Internet? Look no further! Network Log is for you!</strong></h3>
+<h3>
+<a id="wondering-when-and-to-where-your-android-apps-are-connecting-across-the-internet-look-no-further-network-log-is-for-you" class="anchor" href="#wondering-when-and-to-where-your-android-apps-are-connecting-across-the-internet-look-no-further-network-log-is-for-you" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Wondering when and to where your Android apps are connecting across the Internet? Look no further! Network Log is for you!</strong>
+</h3>
 
 <p>Network Log monitors iptables-logging to display a real-time list of which apps are making network connections, and provides statistics about those app connections.</p>
 
-<h2><strong>Real-time log display</strong></h2>
+<h2>
+<a id="real-time-log-display" class="anchor" href="#real-time-log-display" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Real-time log display</strong>
+</h2>
 
 <p>The log tab shows the network packets being transmitted and their details such as:</p>
 
 <ul>
 <li>source and destination addresses/ports</li>
+<li>network protocol and interface</li>
 <li>bytes transmitted</li>
 <li>timestamp </li>
-</ul><h2><strong>Real-time network usage statistics</strong></h2>
+</ul>
+
+<h2>
+<a id="real-time-network-usage-statistics" class="anchor" href="#real-time-network-usage-statistics" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Real-time network usage statistics</strong>
+</h2>
 
 <p>The applications tab lists installed applications along with network usage statistics such as:</p>
 
 <ul>
 <li>total packets and bytes sent</li>
+<li>active network throughput speed in Bps/Kbps/Mbps</li>
 <li>timestamp of last connection</li>
 <li>list of all the unique connections made by each app</li>
 <li>sortable and filterable</li>
-</ul><h2><strong>Graphs</strong></h2>
+</ul>
+
+<h2>
+<a id="real-time-connection-notifications" class="anchor" href="#real-time-connection-notifications" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Real-time connection notifications</strong>
+</h2>
+
+<p>The statusbar icon's up/down arrows will highlight when upload/download traffic occurs, and the notification drop-down shade displays the connection throughput speed in Kbps.</p>
+
+<p>You can also configure toast pop-up notifications on a per-app basis that will pop-up a temporary notification containing connection details no matter which app you are in.</p>
+
+<h2>
+<a id="graphs" class="anchor" href="#graphs" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Graphs</strong>
+</h2>
 
 <p>Click an app in either tab to see time-lines of its connections.</p>
 
@@ -67,33 +79,41 @@
 <li>to see each packet, set to 1 ms</li>
 <li>for Kbps, set to 1 second</li>
 <li>for Kb-per-hour, set to 1 hour; etc</li>
-</ul><p>Adjustable <strong><em>pinch-zoomable</em></strong> and <strong><em>scrollable</em></strong> viewsize.</p>
+</ul>
+
+<p>Adjustable <strong><em>pinch-zoomable</em></strong> and <strong><em>scrollable</em></strong> graphs.</p>
 
 <p><em>Requires rooted devices.</em></p>
 
-<p>Full source code available at <a href="http://code.google.com/p/iptableslog/source/list">http://code.google.com/p/iptableslog/source/list</a> and <a href="https://github.com/pragma-/networklog">https://github.com/pragma-/networklog</a>.</p>
-
-<p><strong>Submit any bugs or feature requests to <a href="http://code.google.com/p/iptableslog/issues">http://code.google.com/p/iptableslog/issues</a>.</strong></p>
+<p>Full source code available at <a href="https://github.com/pragma-/networklog">https://github.com/pragma-/networklog</a>.</p>
 
 <p><em>Note: While the app itself is designed to use minimal CPU/battery, you can further reduce the CPU/battery use by exiting the app after starting the logging service.</em></p>
 
-<img src="http://imgbin.org/images/8254.png" alt=""><img src="http://imgbin.org/images/8251.png" alt="">
-<img src="http://imgbin.org/images/7992.png" alt=""><img src="http://imgbin.org/images/8252.png" alt="">
-<img src="http://imgbin.org/images/8253.png" alt=""><img src="http://imgbin.org/images/7995.png" alt="">
-<img src="http://imgbin.org/images/8053.png" alt=""><img src="http://imgbin.org/images/8056.png" alt="">
+<p><a href="http://i.imgur.com/Z1bwVUG.jpg"><img height="535" width="320" src="http://i.imgur.com/Z1bwVUG.jpg"></a>
+ 
+<a href="http://i.imgur.com/NwpzkkA.jpg"><img height="535" width="320" src="http://i.imgur.com/NwpzkkA.jpg"></a>
+ 
+<a href="http://i.imgur.com/5NPPvXf.jpg"><img height="535" width="320" src="http://i.imgur.com/5NPPvXf.jpg"></a>
+ 
+<a href="http://i.imgur.com/PHnXZFk.jpg"><img height="535" width="320" src="http://i.imgur.com/PHnXZFk.jpg"></a>
+ 
+<a href="http://i.imgur.com/x9hl4tK.jpg"><img height="535" width="320" src="http://i.imgur.com/x9hl4tK.jpg"></a>
+ 
+<a href="http://i.imgur.com/Um7OArJ.jpg"><img height="535" width="320" src="http://i.imgur.com/Um7OArJ.jpg"></a>
+ 
+<a href="http://i.imgur.com/hND5qlO.jpg"><img height="535" width="320" src="http://i.imgur.com/hND5qlO.jpg"></a>
+ 
+<a href="http://i.imgur.com/rzL0GXf.jpg"><img height="535" width="320" src="http://i.imgur.com/rzL0GXf.jpg"></a></p>
 
-      </section>
-    </div>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/clarkdemvher/networklog">NetworkLog</a> is maintained by <a href="https://github.com/clarkdemvher">clarkdemvher</a>.</span>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">NetworkLog maintained by <a href="https://github.com/pragma-">pragma-</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
+    </section>
 
+  
   </body>
 </html>
+
